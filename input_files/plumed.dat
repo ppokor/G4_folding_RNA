@@ -1,0 +1,27 @@
+# vim:ft=plumed
+
+MOLINFO STRUCTURE=RNA_reference.pdb
+WHOLEMOLECULES ENTITY0=1-506	
+
+###########
+
+DISTfull: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3,@lcs-5,@lcs-6,@lcs-7,@lcs-9,@lcs-10,@lcs-11,@lcs-13,@lcs-14,@lcs-15 REFERENCE=RNA_reference.pdb CUTOFF=3.2
+DISTpart1: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3 REFERENCE=RNA_reference.pdb CUTOFF=3.2
+DISTpart2: ERMSD ATOMS=@lcs-5,@lcs-6,@lcs-7 REFERENCE=RNA_reference.pdb CUTOFF=3.2
+DISTpart3: ERMSD ATOMS=@lcs-9,@lcs-10,@lcs-11 REFERENCE=RNA_reference.pdb CUTOFF=3.2
+DISTpart4: ERMSD ATOMS=@lcs-13,@lcs-14,@lcs-15 REFERENCE=RNA_reference.pdb CUTOFF=3.2
+
+
+# combination: sqrt( 1/Nw (Nw*eRMSDwhole**2 - (N1*eRMSDR1**2 + N2*eRMSDR2**2  ) ) where N is number of bases
+COMBINE  LABEL=DD  ARG=DISTfull,DISTpart1,DISTpart2,DISTpart3,DISTpart4 COEFFICIENTS=12,-3,-3,-3,-3 POWERS=2,2,2,2,2 PERIODIC=NO
+# sqrt
+COMBINE LABEL=interD  ARG=DD POWERS=0.5 PERIODIC=NO COEFFICIENTS=0.288675135  #COEF=sqrt(1/12
+
+# be included in the assessment of the structures.
+DIST1: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3,@lcs-5,@lcs-6,@lcs-7,@lcs-9,@lcs-10,@lcs-11,@lcs-13,@lcs-14,@lcs-15 REFERENCE=RNA_reference.pdb
+
+
+# metadynamics
+metad: METAD ARG=interD PACE=250 TAU=70 SIGMA=0.1 FILE=HILLS TEMP=298 BIASFACTOR=15 GRID_MIN=0 GRID_MAX=5.0 GRID_SPACING=0.02
+
+
