@@ -8,8 +8,7 @@ manuscript can be found here:
 
 videos of the folding trajectories:
 
-
-add 1_1 !
+https://github.com/user-attachments/assets/fc804bdb-fd15-4d08-9241-280b04cf65f0
 
 https://github.com/user-attachments/assets/f4facf3b-bebb-401f-91ee-82bdb8dc508b
 
