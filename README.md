@@ -1,8 +1,10 @@
 # G4_folding_RNA
 
-https://github.com/user-attachments/assets/2ab3cddc-e62f-4f43-8aa1-8743504a86da
+input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA GGGAGGGAGGGAGGG G4 folding
 
+more data are here:
 
+manuscript can be found here:
 
-https://github.com/user-attachments/assets/0f29f603-13ff-41b4-957f-865caff45403
-
+videos of the folding trajectories:
+[![reactive traj 1_!])](https://youtu.be/R8lSLDG1hgE)
