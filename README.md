@@ -7,4 +7,5 @@ more data are here:
 manuscript can be found here:
 
 videos of the folding trajectories:
-[![reactive traj 1_!])](https://youtu.be/R8lSLDG1hgE)
+[![reactive traj 1_1](https://img.youtube.com/vi/R8lSLDG1hgE/0.jpg)](https://www.youtube.com/watch?v=R8lSLDG1hgE)
+#[![reactive traj 1_1])](https://youtu.be/R8lSLDG1hgE)
