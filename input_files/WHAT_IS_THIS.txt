@@ -1,0 +1,10 @@
+gromacs topology files MTD*.top are scaled according to the effective temperature in their replicas
+gromacs coordinate files start_rep*.gro each have different coordinates (generated from a short MD)
+gromacs tpr files are generated from the files above and the MTD.mdp file
+
+can be run as (1 microsecond):
+gromacs 2018.8 + plumed 2.5.6
+  mpirun -np 16 --map-by node gmx_mpi mdrun -pin on -ntomp 4 -nb gpu -v -s MTD -nsteps 250000000 -plumed plumed.dat -multi 16 -replex 2500 -hrex -cpi state.cpt -noappend 
+
+gromacs 2021.4 + plumed 2.7.3
+  mpirun -np 16 --map-by node  gmx_mpi mdrun -pin on -ntomp 8 -nb gpu -v -s MTD -plumed plumed.dat -multidir rep0 rep1 rep2 rep3 rep4 rep5 rep6 rep7 rep8 rep9 rep10 rep11 rep12 rep13 rep14 rep15  -replex 2500 -hrex -nsteps 250000000 -cpi state.cpt -noappend 
