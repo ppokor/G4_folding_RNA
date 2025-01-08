@@ -2,7 +2,12 @@
 
 input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA GGGAGGGAGGGAGGG G4 folding
 
-more data and higher-quality videos are here:
+more data and higher-quality videos are here: 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13646267.svg)](https://doi.org/10.5281/zenodo.13646267)
+
+
+plumed egg is here: [![plumID:25.001](https://www.plumed-nest.org/eggs/25/001/badge.svg)](https://www.plumed-nest.org/eggs/25/001/)
 
 manuscript can be found here:
 
