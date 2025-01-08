@@ -3,7 +3,6 @@
 input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA GGGAGGGAGGGAGGG G4 folding
 
 more data and higher-quality videos are here: 
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13646267.svg)](https://doi.org/10.5281/zenodo.13646267)
 
 
