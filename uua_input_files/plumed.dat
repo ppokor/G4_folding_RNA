@@ -1,0 +1,25 @@
+# vim:ft=plumed
+# PDB that provides information on the molecules that are present in your system.
+
+MOLINFO STRUCTURE=terra_md-native.pdb
+WHOLEMOLECULES ENTITY0=1-686
+
+# biasing eRMSD:
+DISTfull: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3,@lcs-7,@lcs-8,@lcs-9,@lcs-13,@lcs-14,@lcs-15,@lcs-19,@lcs-20,@lcs-21 REFERENCE=terra_md-native.pdb CUTOFF=3.2
+DISTpart1: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3 REFERENCE=terra_md-native.pdb CUTOFF=3.2
+DISTpart2: ERMSD ATOMS=@lcs-7,@lcs-8,@lcs-9 REFERENCE=terra_md-native.pdb CUTOFF=3.2
+DISTpart3: ERMSD ATOMS=@lcs-13,@lcs-14,@lcs-15 REFERENCE=terra_md-native.pdb CUTOFF=3.2
+DISTpart4: ERMSD ATOMS=@lcs-19,@lcs-20,@lcs-21 REFERENCE=terra_md-native.pdb CUTOFF=3.2
+
+COMBINE  LABEL=DD  ARG=DISTfull,DISTpart1,DISTpart2,DISTpart3,DISTpart4 COEFFICIENTS=12,-3,-3,-3,-3 POWERS=2,2,2,2,2 PERIODIC=NO
+COMBINE LABEL=interD  ARG=DD POWERS=0.5 PERIODIC=NO COEFFICIENTS=0.288675135  #COEF=sqrt(1/12)
+
+# eRMSD with standard cutoff (2.4), used for monitoring only:
+DIST1: ERMSD ATOMS=@lcs-1,@lcs-2,@lcs-3,@lcs-7,@lcs-8,@lcs-9,@lcs-13,@lcs-14,@lcs-15,@lcs-19,@lcs-20,@lcs-21 REFERENCE=terra_md-native.pdb
+
+# metadynamics
+metad: METAD ARG=interD PACE=250 TAU=70 SIGMA=0.1 FILE=HILLS TEMP=298 BIASFACTOR=15 GRID_MIN=0 GRID_MAX=5.0 GRID_SPACING=0.02
+
+# print colvar file
+PRINT ARG=interD,DIST1,metad.bias FILE=COLVAR STRIDE=250
+

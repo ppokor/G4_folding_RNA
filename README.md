@@ -1,6 +1,8 @@
 # G4_folding_RNA
 
-input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA GGGAGGGAGGGAGGG G4 folding
+input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA G4 folding
+directories called a_* contain data for GGGAGGGAGGGAGGG sequence
+directories called uua_* contain data for GGGUUAGGGUUAGGGUUAGGG sequence
 
 more data and higher-quality videos are here: 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13646267.svg)](https://doi.org/10.5281/zenodo.13646267)
