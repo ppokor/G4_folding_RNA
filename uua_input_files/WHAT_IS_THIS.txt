@@ -1,0 +1,21 @@
+processed.top is a modified gromacs topology labeling atoms that are to be scaled for the replicas (all RNA atoms) with "_"
+gromacs topology files MTD*.top are scaled using the lambdas file according to the effective temperature in their replicas
+	REPLICAS=32
+	n=0
+	for lambda in `cat lambdas${REPLICAS}.dat`
+	do
+	plumed partial_tempering $lambda < processed.top > MTD$n.top
+	n=$(($n+1))
+	done
+
+gromacs coordinate files start_rep*.gro each have different coordinates (generated from a short MD)
+gromacs tpr files are generated from the files above and the MTD.mdp file
+	for i in `seq 0 $((REPLICAS-1))`
+	do
+	gmx_mpi grompp -f MTD.mdp -c start_rep$i.gro -p MTD$i.top -o MTD$i.tpr -maxwarn 1
+	done
+
+can be run as (1 microsecond):
+	gromacs 2018.8 + plumed 2.5.6
+	 	mpirun -np 32 --map-by node gmx_mpi mdrun -pin on -ntomp 4 -nb gpu -v -s MTD -nsteps 250000000 -plumed plumed.dat -multi 32 -replex 2500 -hrex -cpi state.cpt -noappend 
+
