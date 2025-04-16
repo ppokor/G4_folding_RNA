@@ -1,8 +1,11 @@
 # G4_folding_RNA
 
 input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA G4 folding
-directories called a_* contain data for GGGAGGGAGGGAGGG sequence
-directories called uua_* contain data for GGGUUAGGGUUAGGGUUAGGG sequence
+
+   directories called a_* contain data for GGGAGGGAGGGAGGG sequence
+
+   directories called uua_* contain data for GGGUUAGGGUUAGGGUUAGGG sequence
+
 
 more data and higher-quality videos are here: 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13646267.svg)](https://doi.org/10.5281/zenodo.13646267)
@@ -14,30 +17,32 @@ manuscript can be found here: https://doi.org/10.1101/2025.01.07.631675
 
 videos of the folding trajectories:
 
-https://github.com/user-attachments/assets/fc804bdb-fd15-4d08-9241-280b04cf65f0
 
-https://github.com/user-attachments/assets/f4facf3b-bebb-401f-91ee-82bdb8dc508b
+https://github.com/user-attachments/assets/4273c0db-4ebc-4472-9c6d-085bbab6803b
 
-https://github.com/user-attachments/assets/cb6d8b67-5aed-478f-93bd-e891bb4e95aa
+https://github.com/user-attachments/assets/4c1c078a-29a5-41fd-8ed1-c1c7dad6f5c1
 
-https://github.com/user-attachments/assets/67fcb3c3-cc57-474c-a3c7-c68842e8e8c5
+https://github.com/user-attachments/assets/51060b59-e45d-4402-9899-a92622a7a4d4
 
-https://github.com/user-attachments/assets/3784ca25-120f-49fc-ad0e-8ea5730e4c80
+https://github.com/user-attachments/assets/ac1115cd-2123-49db-8e54-80d1425e4763
 
-https://github.com/user-attachments/assets/b6cbbe5f-22b2-4b09-95e1-6ca25efbc9b7
+https://github.com/user-attachments/assets/8b9d165c-b1f8-4d7c-9121-570c054af0d6
 
-https://github.com/user-attachments/assets/2ef82926-e6db-4b1b-9afa-470ff231e065
+https://github.com/user-attachments/assets/5e109eaa-07a5-4907-9870-f898104224e7
 
-https://github.com/user-attachments/assets/ed36fb9e-f6c2-4366-a065-65491d90b5ad
+https://github.com/user-attachments/assets/46f26a6f-3562-49ec-bf22-ba7027d323a3
 
-https://github.com/user-attachments/assets/7d53bc1d-5b2d-4caa-ad7c-721696ca01be
+https://github.com/user-attachments/assets/37ae6387-1acd-4fc2-8cba-b8685672da70
 
-https://github.com/user-attachments/assets/60ab03be-69f8-421b-8812-7ef2495e675d
+https://github.com/user-attachments/assets/f03a709e-f370-407d-ac73-0a239939a40a
 
-https://github.com/user-attachments/assets/2b551a67-8597-40af-a315-628829c6922c
+https://github.com/user-attachments/assets/1b783647-382d-4a53-8f05-fc0e53db8b85
 
+https://github.com/user-attachments/assets/d537a175-f00a-432b-aa8d-2956c12743b6
 
+https://github.com/user-attachments/assets/06dddf2b-cf22-49e0-a6e0-b47b3c577031
 
+https://github.com/user-attachments/assets/1cc82048-45f1-41d1-a4ed-832e5b02e519
 
 
 
