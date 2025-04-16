@@ -1,21 +1,21 @@
 # G4_folding_RNA
 
-input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA G4 folding
+Input, run, and analysis files and strode folding trajectories for all-atom ST-metaD MD simulations of RNA G4 folding
 
-   directories called a_* contain data for GGGAGGGAGGGAGGG sequence
+  - directories called a_* contain data for GGGAGGGAGGGAGGG sequence
 
-   directories called uua_* contain data for GGGUUAGGGUUAGGGUUAGGG sequence
+  - directories called uua_* contain data for GGGUUAGGGUUAGGGUUAGGG sequence
+    
 
 
-more data and higher-quality videos are here: 
+More data and high-quality videos are here: 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13646267.svg)](https://doi.org/10.5281/zenodo.13646267)
 
+Plumed egg is here: [![plumID:25.001](https://www.plumed-nest.org/eggs/25/001/badge.svg)](https://www.plumed-nest.org/eggs/25/001/)
 
-plumed egg is here: [![plumID:25.001](https://www.plumed-nest.org/eggs/25/001/badge.svg)](https://www.plumed-nest.org/eggs/25/001/)
+Manuscript can be found here: https://doi.org/10.1101/2025.01.07.631675
 
-manuscript can be found here: https://doi.org/10.1101/2025.01.07.631675
-
-videos of the folding trajectories:
+Videos of the folding trajectories (low-quality):
 
 
 https://github.com/user-attachments/assets/4273c0db-4ebc-4472-9c6d-085bbab6803b
@@ -42,11 +42,10 @@ https://github.com/user-attachments/assets/d537a175-f00a-432b-aa8d-2956c12743b6
 
 https://github.com/user-attachments/assets/06dddf2b-cf22-49e0-a6e0-b47b3c577031
 
-https://github.com/user-attachments/assets/b7d82158-1694-479b-a902-7f6b82946872
+https://github.com/user-attachments/assets/2cde553b-c8d1-40e7-9269-e067e4df5259
 
 https://github.com/user-attachments/assets/1cc82048-45f1-41d1-a4ed-832e5b02e519
 
+https://github.com/user-attachments/assets/495346aa-77fb-41e2-98a7-bb51a98381b9
 
-
-
-
+https://github.com/user-attachments/assets/1b95f441-0912-4e26-bfb8-739a4bd34a28
