@@ -1,5 +1,0 @@
-# 04/16/25 14:10:48
-# Args:  terraRNA_stripWAT.parm7
-# Loaded topologies:
-#   terraRNA_stripWAT.parm7
-trtrajin uua_reactive_trajs_cut/reactive_traj_uua1_4_stride10.xtc 0 10000
