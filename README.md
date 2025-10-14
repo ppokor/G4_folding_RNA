@@ -13,7 +13,8 @@ More data and high-quality videos are here:
 
 Plumed egg is here: [![plumID:25.001](https://www.plumed-nest.org/eggs/25/001/badge.svg)](https://www.plumed-nest.org/eggs/25/001/)
 
-Manuscript can be found here: https://doi.org/10.1101/2025.01.07.631675
+Manuscript can be found here:  https://doi.org/10.1093/nar/gkaf872
+Preprint version here: https://doi.org/10.1101/2025.01.07.631675
 
 Videos of the folding trajectories (low-quality):
 
